@@ -9,6 +9,7 @@ const App = () => {
     <header
     className='App-header'
     style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
+    data-testid='header'
     >
     <button
       type='button'
@@ -18,6 +19,7 @@ const App = () => {
         color: theme.color,
         outline: 'none'
       }}
+      data-testid='toggle-theme-btn'
       >
       Toggle to {!dark ? 'Dark' : 'Light'} theme 
       </button>
