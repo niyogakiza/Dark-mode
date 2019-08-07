@@ -10,7 +10,7 @@ export const ThemeProvider = ({ children }) => {
   useEffect(() => {
     const isDark = localStorage.getItem('dark') === 'true'
     setDark(isDark)
-  }, [dark, setDark])
+  }, [dark])
 
   /** To toggle between dark and light modes */
   const toggle = () => {

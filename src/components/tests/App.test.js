@@ -4,7 +4,7 @@ import App from '../App'
 
 describe('<App/>', () => {
   test('renders with light mode default' , () => {
-    const { getByTestId } = render(<App />)
+    const { getByTestId } = render(<App/>)
     expect(getByTestId('toggle-theme-btn')).toBeInTheDocument()
     expect(getByTestId('header')).toHaveStyle('background-color: white')
   })
